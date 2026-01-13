@@ -8,6 +8,7 @@ $result = $conn->query("SELECT * FROM mahasiswa ORDER BY id DESC");
 <head>
     <meta charset="UTF-8">
     <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         table, th, td {
             border: 1px solid black;
@@ -21,7 +22,7 @@ $result = $conn->query("SELECT * FROM mahasiswa ORDER BY id DESC");
 </head>
 <body>
     <h2>Data Mahasiswa</h2>
-    <a href="/create">Tambah Data</a><br><br>
+    <a href="/create" class="button">Tambah Data</a><br><br>
 
     <table>
         <tr>
@@ -49,8 +50,8 @@ $result = $conn->query("SELECT * FROM mahasiswa ORDER BY id DESC");
             }
             echo "</td>";
             echo "<td>
-                <a href='/edit?id=" . $row['id'] . "'>Edit</a> |
-                <a href='/hapus?id=" . $row['id'] . "' onclick=\"return confirm('Yakin ingin hapus data?')\">Hapus</a>
+                <a href='/edit?id=" . $row['id'] . "' class='button'>Edit</a> |
+                <a class='button' href='/hapus?id=" . $row['id'] . "' onclick=\"return confirm('Yakin ingin hapus data?')\">Hapus</a>
             </td>";
             echo "</tr>";
         }

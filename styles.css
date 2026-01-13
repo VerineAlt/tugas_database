@@ -1,0 +1,76 @@
+/* global styling */
+
+* {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: blanchedalmond;
+  
+}
+
+/* base buttons */
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #28a745;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+}
+
+.button:hover {
+  background-color: #218838;
+}
+
+/* base table */
+
+table {
+  width: 100%;
+}
+
+/* base input */
+
+input {
+  background-color: #fff;
+  padding: 8px;
+  border: 1px solid brown;
+  border-radius: 4px;
+  width: 100%;
+
+}
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  margin-right: 16px;
+}
+
+#file-input {
+  width: fit-content;
+}
+
+/* base form */
+
+.form-group {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  gap: 20px;
+}
+
+form {
+  
+}
+
+/* base link */
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* l */
